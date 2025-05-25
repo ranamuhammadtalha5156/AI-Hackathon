@@ -1,45 +1,33 @@
+// This file contains custom JavaScript code for additional functionality specific to the Barista Cafe website.
 
-  (function ($) {
-  
-  "use strict";
+// Change the theme of the entire Barista Cafe website
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme-toggle');
 
-    // NAVBAR
-    $('.navbar-collapse a').on('click',function(){
-      $(".navbar-collapse").collapse('hide');
-    });
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
 
-    $(function() {
-      $('.hero-slides').vegas({
-          slides: [
-              { src: 'images/slides/sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg' },
-              { src: 'images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg' },
-              { src: 'images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg' }
-          ],
-          timer: false,
-          animation: 'kenburns',
-      });
-    });
-    
-    // CUSTOM LINK
-    $('.smoothscroll').click(function(){
-      var el = $(this).attr('href');
-      var elWrapped = $(el);
-      var header_height = $('.navbar').height() + 60;
-  
-      scrollToDiv(elWrapped,header_height);
-      return false;
-  
-      function scrollToDiv(element,navheight){
-        var offset = element.offset();
-        var offsetTop = offset.top;
-        var totalScroll = offsetTop-navheight;
-  
-        $('body,html').animate({
-        scrollTop: totalScroll
-        }, 300);
-      }
-    });
-  
-  })(window.jQuery);
-
-
+            // Change styles based on the theme
+            if (document.body.classList.contains('dark-theme')) {
+                document.querySelectorAll('.text-white').forEach(element => {
+                    element.classList.remove('text-white');
+                    element.classList.add('text-light');
+                });
+                document.querySelectorAll('.section-bg').forEach(element => {
+                    element.classList.remove('section-bg');
+                    element.classList.add('section-bg-dark');
+                });
+            } else {
+                document.querySelectorAll('.text-light').forEach(element => {
+                    element.classList.remove('text-light');
+                    element.classList.add('text-white');
+                });
+                document.querySelectorAll('.section-bg-dark').forEach(element => {
+                    element.classList.remove('section-bg-dark');
+                    element.classList.add('section-bg');
+                });
+            }
+        });
+    }
+});
