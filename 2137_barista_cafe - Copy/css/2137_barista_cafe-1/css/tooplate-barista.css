@@ -1,0 +1,91 @@
+/* 
+This file contains custom styles specific to the Barista Cafe theme, including layout, colors, and typography.
+*/
+
+/* Global Styles */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f8f9fa; /* Light background for a fresh look */
+    color: #343a40; /* Dark text for readability */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #6f42c1; /* Purple background for the navbar */
+}
+
+.navbar-brand {
+    color: #ffffff; /* White text for brand */
+}
+
+.nav-link {
+    color: #ffffff; /* White text for links */
+}
+
+.nav-link:hover {
+    color: #d1d1d1; /* Light gray on hover */
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover; /* Background image for hero section */
+    color: #ffffff; /* White text for hero section */
+    padding: 100px 0; /* Padding for hero section */
+}
+
+/* Button Styles */
+.custom-btn {
+    background-color: #28a745; /* Green background for buttons */
+    color: #ffffff; /* White text for buttons */
+}
+
+.custom-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* About Section */
+.about-section {
+    background-color: #ffffff; /* White background for about section */
+    padding: 60px 0; /* Padding for about section */
+}
+
+/* Menu Section */
+.menu-section {
+    background-color: #f8f9fa; /* Light background for menu section */
+    padding: 60px 0; /* Padding for menu section */
+}
+
+/* Reviews Section */
+.reviews-section {
+    background-color: #343a40; /* Dark background for reviews section */
+    color: #ffffff; /* White text for reviews section */
+    padding: 60px 0; /* Padding for reviews section */
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #ffffff; /* White background for contact section */
+    padding: 60px 0; /* Padding for contact section */
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #6f42c1; /* Purple background for footer */
+    color: #ffffff; /* White text for footer */
+    padding: 40px 0; /* Padding for footer */
+}
+
+.site-footer a {
+    color: #ffffff; /* White links in footer */
+}
+
+.site-footer a:hover {
+    color: #d1d1d1; /* Light gray on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0; /* Adjust padding for smaller screens */
+    }
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reservation page for Barista Cafe">
+    <meta name="author" content="Barista Cafe Team">
+    <title>Reservation - Barista Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/tooplate-barista.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/coffee-beans.png" class="navbar-brand-image img-fluid" alt="Barista Cafe Template">
+                    Barista
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="reservation-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center mb-4">
+                        <h2 class="text-white">Make a Reservation</h2>
+                        <p class="text-white">Fill out the form below to reserve your table.</p>
+                    </div>
+                </div>
+                <form action="#" method="post" class="custom-form contact-form" role="form">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required="">
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <label for="email" class="form-label">Email Address <sup class="text-danger">*</sup></label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required="">
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <label for="date" class="form-label">Reservation Date <sup class="text-danger">*</sup></label>
+                            <input type="date" name="date" id="date" class="form-control" required="">
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <label for="time" class="form-label">Reservation Time <sup class="text-danger">*</sup></label>
+                            <input type="time" name="time" id="time" class="form-control" required="">
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Special Requests</label>
+                            <textarea name="message" rows="4" class="form-control" id="message" placeholder="Any special requests?"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 mx-auto mt-3">
+                        <button type="submit" class="form-control">Reserve Now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center">
+                        <p class="copyright-text mb-0">Copyright © Barista Cafe 2048 - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
